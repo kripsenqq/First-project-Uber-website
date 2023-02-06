@@ -88,8 +88,9 @@ nav
   min-height: 800px
   background: url('../img/first_bg.png') center (center / cover) no-repeat
   width: 100%
-  padding: 150px 0 135px 0
-  &_header
+  padding: 150px 0 0px 0
+  .row
+    &_header
     color: #ffffff
     font-weight: 7f00
     text-transform: uppercase
@@ -129,7 +130,12 @@ nav
     text-transform: uppercase
     &:hover
       +btn_hover
-
+  &_arrow
+    display: relative
+    img
+      height: 35px
+      width: 35px
+      margin: 70px auto
 .label
   margin: 0 auto
   height: 24px
@@ -482,3 +488,4 @@ nav
       
 .xs-visible
   display: none
+  
